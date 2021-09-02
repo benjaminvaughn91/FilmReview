@@ -37,7 +37,7 @@ const ReviewForm = (props) => {
         <div className="flex mx-auto bg-gray-800 px-5 lg:px-0 items-center justify-center shadow-lg mx-8 rounded-b-md">
         <form onSubmit={createReview}>
           <div className="mt-2">
-          <h2 className="pt-3 pb-4 text-gray-100 text-center text-2xl "> Add a review for this movie </h2>
+          <h2 className="pt-3 pb-4 text-gray-100 text-center text-2xl"> Add a review for this movie </h2>
           <input className="font-medium rounded border border-gray-400 py-1 px-3 text-gray-500" 
               value={newAuthor} onChange={handleNewAuthorChange} placeholder="Your name"/>  
           <textarea className=" rounded border border-gray-400 leading-normal w-full h-52 py-1 px-3 mt-3 font-medium text-gray-500" 
