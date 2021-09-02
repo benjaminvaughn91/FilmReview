@@ -36,7 +36,7 @@ const ReviewBox = (props) => {
     return (
         <div className="w-1/2">
         <button onClick={buttonHandler}>
-        <div className="flex flex-nowrap h-48 rounded overflow-hidden border-2 border-transparent hover:border-gray-100 shadow-2xl hover:shadow-2xl hover:shadow-2xl hover:shadow-inner ">
+        <div className="flex flex-nowrap h-48 rounded overflow-hidden border-2 border-transparent hover:border-gray-100 shadow-2xl hover:shadow-2xl hover:shadow-2xl hover:shadow-inner">
             
             <img className="pt-0 w-20 h-20 lg:w-auto lg:h-auto hidden sm:block" src={imgUrl} alt="Poster"></img>
             
@@ -52,6 +52,5 @@ const ReviewBox = (props) => {
         </button>
         </div>
 )}
-
 
 export default ReviewBox

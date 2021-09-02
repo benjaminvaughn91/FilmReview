@@ -11,4 +11,5 @@ const getPeriodList = (year) => {
     return request.then(response => response.data.results)
 }
 
-export default {getPopularList, getPeriodList}
+const listAPI = {getPopularList, getPeriodList}
+export default listAPI

@@ -15,4 +15,5 @@ const createReview = (reviewObj) => {
     return request.then(response => response.data)
 }
 
-export default {getReview, getReviews, createReview}
+const reviewAPI = {getReview, getReviews, createReview}
+export default reviewAPI

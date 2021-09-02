@@ -32,13 +32,12 @@ const MovieDetailsPage = (props) => {
         }
         return () => { isMounted = false }
       }, [id, movieId])
-
     
     return (
     <div>
     <div className="bg-gradient-to-r from-gray-400 via-red-400 to-gray-400 text-xl text-white ">
-        <div className="py-7 ">
-        <div className="text-center md:text-left w-11/12 md:w-2/3 mx-auto py-9 px-9 bg-gray-800 grid grid-cols-5 rounded-md ">
+        <div className="py-7">
+        <div className="text-center md:text-left w-11/12 md:w-2/3 mx-auto py-9 px-9 bg-gray-800 grid grid-cols-5 rounded-md">
             <div className="col-start-1 col-end-3 row-start-3 md:row-start-1 row-end-6 ">
                 <img className="hidden lg:block mt-8 shadow-2xl rounded-md w-3/4 mx-auto" src={imgUrl} alt="poster"></img>
             </div>
@@ -53,7 +52,6 @@ const MovieDetailsPage = (props) => {
         </div>
     </div>
     </div>
-
 )}
 
 export default MovieDetailsPage

@@ -77,7 +77,6 @@ const MovieDetailsPage = (props) => {
         </div> 
     </div> 
     </div>
-
 )}
 
 export default MovieDetailsPage

@@ -6,10 +6,9 @@ const getMovie = (id) => {
   }
 
 const getMovieCast = (id) => {
-    
     const request = axios.get(`/api/movie/${id}/credits`)
     return request.then(response => response.data)
   }
 
-
-export default {getMovie, getMovieCast}
+const movieAPI = {getMovie, getMovieCast}
+export default movieAPI
