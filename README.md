@@ -1,4 +1,4 @@
-Welcome to Film Review, a place for browsing movies and posting reviews about them. 
+Welcome to Film Review, a place for browsing movies and posting reviews about them. Feel free to post something.
 
 This site was made with React, NodeJS, Express and a MongoDb database. It's mostly for show and to let me experiment with React. 
 Movie lists and information are fetched from The Movie Database (TMDB) API and reviews are stored in my MongoDb database. 
