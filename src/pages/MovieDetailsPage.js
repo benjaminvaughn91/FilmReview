@@ -59,7 +59,7 @@ const MovieDetailsPage = (props) => {
         <div className="py-7 ">
         <div className="text-center md:text-left w-11/12 md:w-2/3 mx-auto py-9 px-9 bg-gray-800 grid grid-cols-5 rounded-t-md ">
             <div className="col-start-1 col-end-6 md:col-end-3 row-start-3 md:row-start-1 row-end-6 ">
-                <img className="shadow-2xl md:mt-8 rounded-md w-3/4 mx-auto" src={imgUrl} alt="poster"></img>
+                <img className="shadow-2xl md:mt-8 rounded-md w-3/4 mx-auto" src={imgUrl} alt={title}></img>
             </div>
             <div className="col-start-1 md:col-start-3 col-end-6 row-start-1 row-end-3 pb-12">
                <h1 className="tracking-wide font-bold text-4xl pt-6">{title} </h1> 
