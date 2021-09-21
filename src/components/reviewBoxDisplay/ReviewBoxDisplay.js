@@ -22,7 +22,7 @@ const ReviewBoxDisplay = (props) => {
 
     return (
     <div>
-    <div className="md:w-2/3 mx-auto flex flex-wrap pt-4 pb-1">
+    <div className="md:w-2/3 mx-auto flex flex-wrap pt-4 pb-4 pb-1 justify-center">
         <DisplayBorder name={name}/>
 
         {reviews.length &&
