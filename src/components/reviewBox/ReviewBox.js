@@ -13,22 +13,22 @@ const ReviewBox = (props) => {
     const [content, setContent] = useState('')
 
     useEffect(() => {
-        let isMounted = true
-        reviewService.getReview(id).then(review => {
-          if (isMounted) {
-            setAuthor(review.author)
-            setContent(review.content)
-          }
-        }) 
-        movieService.getMovie(movieId).then(movie => {
-          if (isMounted) {
-            setTitle(movie.title)
-            movie.poster_path ? setImgUrl(movie.poster_base + movie.poster_path)
-              : setImgUrl(defaultPosterPath)
-          }
-        })  
-        return () => { isMounted = false }
-      }, [id, movieId])
+      let isMounted = true
+      reviewService.getReview(id).then(review => {
+        if (isMounted) {
+          setAuthor(review.author)
+          setContent(review.content)
+        }
+      }) 
+      movieService.getMovie(movieId).then(movie => {
+        if (isMounted) {
+          setTitle(movie.title)
+          movie.poster_path ? setImgUrl(movie.poster_base + movie.poster_path)
+            : setImgUrl(defaultPosterPath)
+        }
+      })  
+      return () => { isMounted = false }
+    }, [id, movieId])
 
     const history = useHistory()
 

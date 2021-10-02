@@ -10,16 +10,16 @@ const MovieCard = (props) => {
     const [imgUrl, setImgUrl] = useState('')
 
     useEffect(() => {
-        let isMounted = true
-        movieService.getMovie(id).then(movie => {
-          if (isMounted) {
-            setTitle(movie.title)
-            movie.poster_path ? setImgUrl(movie.poster_base + movie.poster_path)
-            : setImgUrl(defaultPosterPath)
-          }
-        })  
-        return () => { isMounted = false }
-      }, [id])
+      let isMounted = true
+      movieService.getMovie(id).then(movie => {
+        if (isMounted) {
+          setTitle(movie.title)
+          movie.poster_path ? setImgUrl(movie.poster_base + movie.poster_path)
+          : setImgUrl(defaultPosterPath)
+        }
+      })  
+      return () => { isMounted = false }
+    }, [id])
 
     const history = useHistory()
 
