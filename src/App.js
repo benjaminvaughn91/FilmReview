@@ -6,22 +6,9 @@ import BrowseReviewsPage from './pages/BrowseReviewsPage'
 import AboutPage from './pages/AboutPage'
 import Footer from './components/footer/Footer'
 import Header from './components/header/Header'
-import { 
-  Switch, Route, useRouteMatch, useHistory
-} from "react-router-dom"
+import { Switch, Route, useRouteMatch } from "react-router-dom"
 
 const App = () => {
-  
-  const history = useHistory()
-
-  const goToMovie = (id) => {
-    history.push(`/detail/${id}`)
-    window.scrollTo(0, 0);
-  }
-  const goToReview = (id) => {
-    history.push(`/review/${id}`)
-    window.scrollTo(0, 0);
-  }
 
   const match = useRouteMatch('/detail/:id')
   let movieId = match 
