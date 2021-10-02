@@ -38,14 +38,13 @@ const MovieCardDisplay = (props) => {
                 <div key={Number(movie.id)} className="p-1">
                     <div>
                         {(i < 6) && //Show these movies for all screen sizes
-                        <MovieCard id={movie.id} goToMovie={goToMovie} />
+                        <MovieCard id={movie.id}/>
                         }
                         {(i >= 6) && //Show these movies only for ipad-sized screens
                         <div className="hidden md:inline lg:hidden">
-                        <MovieCard id={movie.id} goToMovie={goToMovie} />
+                        <MovieCard id={movie.id}/>
                         </div>}
-                    </div>
-                    
+                    </div>       
                 </div>    
             )}
         </div>

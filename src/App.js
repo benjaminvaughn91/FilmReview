@@ -38,19 +38,19 @@ const App = () => {
    <Header/>
     <Switch>
       <Route path="/detail/:id">
-        <MovieDetailsPage id={movieId} goToMovie={goToMovie} goToReview={goToReview}/>
+        <MovieDetailsPage id={movieId}/>
       </Route>
       <Route path="/review/:id">
-        <ReviewDetailsPage id={reviewId} goToMovie={goToMovie} goToReview={goToReview}/>
+        <ReviewDetailsPage id={reviewId}/>
       </Route>
       <Route path="/browse/reviews">
-        <BrowseReviewsPage goToReview={goToReview}/>
+        <BrowseReviewsPage />
       </Route>
       <Route path="/about">
         <AboutPage />
       </Route>
       <Route path="/">
-        <HomePage goToMovie={goToMovie} goToReview={goToReview}/>
+        <HomePage />
       </Route>
     </Switch>
     <Footer/>

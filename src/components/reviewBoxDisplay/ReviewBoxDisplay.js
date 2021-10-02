@@ -28,12 +28,12 @@ const ReviewBoxDisplay = (props) => {
         {reviews.length &&
         <div>
             <div className="flex flex-nowrap w-full gap-x-2 pb-5">
-                <ReviewBox id={reviews[0].id} movieId={reviews[0].movieId} goToReview={goToReview}/>
-                <ReviewBox id={reviews[1].id} movieId={reviews[1].movieId} goToReview={goToReview}/>
+                <ReviewBox id={reviews[0].id} movieId={reviews[0].movieId} />
+                <ReviewBox id={reviews[1].id} movieId={reviews[1].movieId} />
             </div>
             <div className="flex flex-nowrap w-full gap-x-2">
-                <ReviewBox id={reviews[2].id} movieId={reviews[2].movieId} goToReview={goToReview}/>
-                <ReviewBox id={reviews[3].id} movieId={reviews[3].movieId} goToReview={goToReview}/>
+                <ReviewBox id={reviews[2].id} movieId={reviews[2].movieId} />
+                <ReviewBox id={reviews[3].id} movieId={reviews[3].movieId} />
             </div>
         </div>
         }
