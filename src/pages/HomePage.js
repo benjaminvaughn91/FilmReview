@@ -2,7 +2,7 @@ import React from 'react'
 import MovieCardDisplay from '../components/movieCardDisplay/MovieCardDisplay'
 import ReviewBoxDisplay from '../components/reviewBoxDisplay/ReviewBoxDisplay'
 
-const HomePage = (props) => {
+const HomePage = () => {
 
     return (
       <div className="bg-gradient-to-r from-gray-400 via-red-400 to-gray-400 text-white pb-8">

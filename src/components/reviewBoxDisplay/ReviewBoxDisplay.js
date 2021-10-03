@@ -4,7 +4,7 @@ import reviewService from '../../services/reviews'
 import DisplayBorder from '../displayBorder/DisplayBorder'
 
 const ReviewBoxDisplay = (props) => {
-    const {name, goToReview} = props;
+    const {name} = props;
 
     const [reviews, setReviews] = useState([])
     
@@ -28,12 +28,12 @@ const ReviewBoxDisplay = (props) => {
         {reviews.length &&
         <div>
             <div className="flex flex-nowrap w-full gap-x-2 pb-5">
-                <ReviewBox id={reviews[0].id} movieId={reviews[0].movieId} />
-                <ReviewBox id={reviews[1].id} movieId={reviews[1].movieId} />
+                <ReviewBox review={reviews[0]} />
+                <ReviewBox review={reviews[1]} />
             </div>
             <div className="flex flex-nowrap w-full gap-x-2">
-                <ReviewBox id={reviews[2].id} movieId={reviews[2].movieId} />
-                <ReviewBox id={reviews[3].id} movieId={reviews[3].movieId} />
+                <ReviewBox review={reviews[2]} />
+                <ReviewBox review={reviews[3]} />
             </div>
         </div>
         }
