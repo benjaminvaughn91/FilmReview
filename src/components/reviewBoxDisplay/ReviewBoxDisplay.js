@@ -20,12 +20,11 @@ const ReviewBoxDisplay = (props) => {
         return () => { isMounted = false }
     }, [])
 
+    if (reviews.length > 0) {
     return (
     <div>
     <div className="md:w-2/3 mx-auto flex flex-wrap pt-4 pb-4 pb-1 justify-center">
         <DisplayBorder name={name}/>
-
-        {reviews.length &&
         <div>
             <div className="flex flex-nowrap w-full gap-x-2 pb-5">
                 <ReviewBox review={reviews[0]} />
@@ -36,9 +35,10 @@ const ReviewBoxDisplay = (props) => {
                 <ReviewBox review={reviews[3]} />
             </div>
         </div>
-        }
     </div>
-</div>
-)}
+    </div>
+    )}
+    else return null
+}
 
 export default ReviewBoxDisplay
