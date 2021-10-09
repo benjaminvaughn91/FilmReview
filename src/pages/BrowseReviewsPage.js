@@ -24,7 +24,7 @@ const BrowseReviewsPage = () => {
         <div className="w-full mx-auto">
             {reviews.map((review) => 
             <div key={review.id}>
-                <div className="flex flex-nowrap justify-center gap-x-2 pb-5">
+                <div className="flex flex-nowrap justify-center gap-x-2 pb-5 w-1/2 mx-auto">
                     <ReviewBox review={review} />
                 </div>
             </div>
